@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0; background:#1e1e1e;">
+  <textarea id="box" style="width:100vw; height:100vh; font-family:monospace; background:#1e1e1e; color:#fff; border:none; padding:1.5rem; box-sizing:border-box; outline:none; resize:none; font-size:14px;"></textarea>
+  <script>
+    const val = decodeURIComponent(window.location.hash.slice(1));
+    const box = document.getElementById('box');
+    box.value = val;
+    box.focus();
+    box.select();
+  </script>
+</body>
+</html>
